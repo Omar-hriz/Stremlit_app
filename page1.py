@@ -16,6 +16,9 @@ produit_fichiers = {
     "GPLc": "comparaison_GPLc.csv"
 }
 
+# Nettoyer la sidebar
+st.sidebar.empty()
+
 st.title("📊 Analyse des Stations d'Essence et Comparaisons de Prix")
 st.markdown("Bienvenue dans cette application d'analyse interactive des stations d'essence.")
 
