@@ -5,4 +5,4 @@ folium==0.14.0
 streamlit-folium==0.10.0
 streamlit-option-menu==0.4.0
 numpy==1.26.4
-Pillow==9.5.0 --only-binary=:all:
+
