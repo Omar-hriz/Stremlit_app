@@ -3,7 +3,7 @@ import streamlit as st
 import plotly.express as px
 
 # Charger les données nettoyées
-file_path = "data_cleaned_sampled.csv"
+file_path = "data_cleaned_sample.csv"
 data = pd.read_csv(file_path)
 
 # Charger les résultats des comparaisons des prix (Étape 7)
