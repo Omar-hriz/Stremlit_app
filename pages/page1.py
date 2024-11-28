@@ -3,24 +3,29 @@ import streamlit as st
 import plotly.express as px
 
 # Charger les données nettoyées
-file_path = "data_cleaned.csv"
+file_path = "../data_cleaned.csv"
 data = pd.read_csv(file_path)
 
 # Charger les résultats des comparaisons des prix (Étape 7)
 produit_fichiers = {
-    "Gazole": "comparaison_Gazole.csv",
-    "SP95": "comparaison_SP95.csv",
-    "SP98": "comparaison_SP98.csv",
-    "E10": "comparaison_E10.csv",
-    "E85": "comparaison_E85.csv",
-    "GPLc": "comparaison_GPLc.csv"
+    "Gazole": "../comparaison_Gazole.csv",
+    "SP95": "../comparaison_SP95.csv",
+    "SP98": "../comparaison_SP98.csv",
+    "E10": "../comparaison_E10.csv",
+    "E85": "../comparaison_E85.csv",
+    "GPLc": "../comparaison_GPLc.csv"
 }
 
-# Nettoyer la sidebar
-st.sidebar.empty()
+st.title("Page 1 - Analyse des Stations")
+st.markdown("Bienvenue sur la première page de l'application.")
 
-st.title("📊 Analyse des Stations d'Essence et Comparaisons de Prix")
-st.markdown("Bienvenue dans cette application d'analyse interactive des stations d'essence.")
+# Bouton pour retourner à la page principale
+if st.sidebar.button("Retour à la page principale"):
+    st.switch_page("main")
+
+# Bouton pour aller à la page 2
+if st.sidebar.button("Aller à la Page 2"):
+    st.switch_page("page2")
 
 # Section 1 : Analyse des enseignes
 st.header("⚡ Analyse des Enseignes")
