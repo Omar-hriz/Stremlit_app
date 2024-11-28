@@ -3,17 +3,17 @@ import streamlit as st
 import plotly.express as px
 
 # Charger les données nettoyées
-file_path = "../data_cleaned_sample.csv"
+file_path = "data_cleaned_sample.csv"
 data = pd.read_csv(file_path)
 
 # Charger les résultats des comparaisons des prix (Étape 7)
 produit_fichiers = {
-    "Gazole": "../sampled_comparaison_Gazole.csv",
-    "SP95": "../sampled_comparaison_SP95.csv",
-    "SP98": "../sampled_comparaison_SP98.csv",
-    "E10": "../sampled_comparaison_E10.csv",
-    "E85": "../sampled_comparaison_E85.csv",
-    "GPLc": "../sampled_comparaison_GPLc.csv"
+    "Gazole": "sampled_comparaison_Gazole.csv",
+    "SP95": "sampled_comparaison_SP95.csv",
+    "SP98": "sampled_comparaison_SP98.csv",
+    "E10": "sampled_comparaison_E10.csv",
+    "E85": "sampled_comparaison_E85.csv",
+    "GPLc": "sampled_comparaison_GPLc.csv"
 }
 
 st.title("Page 1 - Analyse des Stations")
