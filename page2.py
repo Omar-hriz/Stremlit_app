@@ -6,9 +6,9 @@ import plotly.express as px
 import json
 
 # Charger les données nettoyées et fichiers JSON
-file_path = "data_cleaned.csv"
-carrefour_file = "stations_carrefour.csv"
-concurrents_file = "stations_autres.csv"
+file_path = "data_cleaned_sample.csv"
+carrefour_file = "stations_carrefour_sample.csv"
+concurrents_file = "stations_autres_sample.csv"
 
 carrefour_data = pd.read_csv(carrefour_file)
 concurrents_data = pd.read_csv(concurrents_file)
