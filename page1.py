@@ -8,12 +8,12 @@ data = pd.read_csv(file_path)
 
 # Charger les résultats des comparaisons des prix (Étape 7)
 produit_fichiers = {
-    "Gazole": "comparaison_Gazole.csv",
-    "SP95": "comparaison_SP95.csv",
-    "SP98": "comparaison_SP98.csv",
-    "E10": "comparaison_E10.csv",
-    "E85": "comparaison_E85.csv",
-    "GPLc": "comparaison_GPLc.csv"
+    "Gazole": "sampled_comparaison_Gazole.csv",
+    "SP95": "sampled_comparaison_SP95.csv",
+    "SP98": "sampled_comparaison_SP98.csv",
+    "E10": "sampled_comparaison_E10.csv",
+    "E85": "sampled_comparaison_E85.csv",
+    "GPLc": "sampled_comparaison_GPLc.csv"
 }
 
 # Nettoyer la sidebar
